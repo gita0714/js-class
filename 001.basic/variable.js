@@ -1,9 +1,10 @@
 /**
- * reassign - can value change
+ * reassign - Can value change
  * redeclier - can make 2 variable with same name
  * scope - use/make 2 variable in same {}
  * hoisting -  use before declieration
  * intial value - need to give intial value
+ * 
  **/
 
 // ----------------------------------- VAR --------------------------------------
