@@ -58,16 +58,36 @@ if (marks < 80) {
 //     break;
 // }
 
-
 let age = 20;
-switch (true) {
-  case  age <= 18 && age <= 25 :
-    console.log("You' age between 18 to 25");  
+switch (age) {
+  case age <= 18 && age <= 25: // true
+    console.log("You' age between 18 to 25");
     break;
-  case   age >= 26 && age <= 40 :
+  case age >= 26 && age <= 40: //f
     console.log("You' age  between 26 to 40");
     break;
-
-    default:
-      console.log("Your age is above 40");
+  default:
+    console.log("Your age is above 40");
 }
+
+// ternary operator
+
+let weight = 9;
+
+// condition ? t : f
+
+// const color = weight > 10 ? "red" : "white"
+// console.log("🚀 ~ color:", color)
+
+// weight > 9 ? console.log("weight") : console.log("red");
+
+function fun1() {
+  console.log("----fun1----");
+}
+function fun2() {
+  console.log("----fun2----");
+}
+
+const call = "fun4";
+
+call === "fun1" ? fun1() : fun2();
