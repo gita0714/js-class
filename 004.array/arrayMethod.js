@@ -171,7 +171,6 @@ console.log("🚀 ~ matchEle:", matchEle);
 // fun(5)
 // fun(3)
 
-
 */
 
 /*
@@ -226,21 +225,51 @@ console.log("🚀 ~ arr:", arr);
 console.log("🚀 ~ newArr:", newArr);
 
 */
-let arr = [1, 2, 3, 4, 5, 3];
 
-let value = arr.at(-2);
-// console.log("🚀 ~ value:", value);
-
-
+/*
 // some(): Tests whether at least one element in the array passes the test implemented by the provided function.
 
+let arr = [1, 2, 3, 4, 5, 3];
+
+let available = arr.some((e) => {
+  return e === 3;
+});
+console.log("🚀 ~ available:", available)
+*/
+
+/*
+// reduce/reduceRight(func, initial) – calculate a single value over the array by calling func for each element and passing an intermediate result between the calls.
+
+let arr = [10, 2, 3, 4, 5];
+
+let total = arr.reduce((LRV, ele, i) => {
+  console.log("🚀 ~ LRV, ele, i:", LRV, ele, i);
+  let total = LRV + ele;
+  console.log("🚀 ~ total:", total);
+  return total;
+});
+console.log("🚀 ~ total:", total)
+
+// default LRV : 0 index value , 
+// if 0 index is default value then loop start from 1 index
+// fun(10,2) => LRV : 10, ele : 2, total : 12, return : 12
+// fun(12,3) => LRV : 12, ele : 3, total : 15, return : 15
+// fun(15,4) => LRV : 15, ele : 4, total : 19, return : 19
+// fun(19,5) => LRV : 19, ele : 5, total : 24, return : 24
 
 
+// fun(10,2)
+// fun(undefined,3)
+// fun(undefined,4)
+// fun(undefined,5)
 
+// fun(10,2)
+// fun("test",3)
+// fun("test",4)
+// fun("test",5)
+*/
 
-
-
-
-
-
-
+// let arr = [1, 2];
+let arr = false
+let check = Array.isArray(arr);
+console.log("🚀 ~ check:", check)
